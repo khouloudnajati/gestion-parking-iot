@@ -1,0 +1,353 @@
+{
+    "date_analyse": "2025-12-29 23:17:47",
+    "appareils_analyses": [
+        "Fridge",
+        "Garage_Door",
+        "GPS_Tracker",
+        "Modbus",
+        "Motion_Light",
+        "Thermostat",
+        "Weather"
+    ],
+    "donnees_extraits": 21,
+    "scores_iot": {
+        "KNN": {
+            "Score_Total": 6.757655168613075,
+            "Score_F1": 10.0,
+            "Score_Vitesse": 6.230620674452303,
+            "Score_Energie": 4,
+            "Score_Memoire": 5,
+            "Score_Interpretabilite": 6,
+            "Score_Robustesse": 5,
+            "F1_Moyen": 1.0,
+            "Temps_Moyen": 0.1800190040043422
+        },
+        "Arbre": {
+            "Score_Total": 9.29018166555836,
+            "Score_F1": 10.0,
+            "Score_Vitesse": 9.960726662233437,
+            "Score_Energie": 9,
+            "Score_Memoire": 8,
+            "Score_Interpretabilite": 9,
+            "Score_Robustesse": 7,
+            "F1_Moyen": 1.0,
+            "Temps_Moyen": 0.0029710701533726285
+        },
+        "SVM": {
+            "Score_Total": 7.237871818166904,
+            "Score_F1": 9.211330405825507,
+            "Score_Vitesse": 9.097890785677007,
+            "Score_Energie": 5,
+            "Score_Memoire": 5,
+            "Score_Interpretabilite": 3,
+            "Score_Robustesse": 8,
+            "F1_Moyen": 0.9211330405825507,
+            "Temps_Moyen": 0.04392521721976144
+        }
+    },
+    "meilleur_modele": "Arbre",
+    "recommandations_par_appareil": {
+        "Fridge": {
+            "meilleur_f1": "KNN",
+            "plus_rapide": "SVM",
+            "f1_moyen": 0.9358314980090155,
+            "temps_moyen": 0.06912684440612793
+        },
+        "Garage_Door": {
+            "meilleur_f1": "KNN",
+            "plus_rapide": "Arbre",
+            "f1_moyen": 1.0,
+            "temps_moyen": 0.1608396371205648
+        },
+        "GPS_Tracker": {
+            "meilleur_f1": "KNN",
+            "plus_rapide": "Arbre",
+            "f1_moyen": 1.0,
+            "temps_moyen": 0.11504554748535156
+        },
+        "Modbus": {
+            "meilleur_f1": "KNN",
+            "plus_rapide": "Arbre",
+            "f1_moyen": 1.0,
+            "temps_moyen": 0.03032819430033366
+        },
+        "Motion_Light": {
+            "meilleur_f1": "KNN",
+            "plus_rapide": "SVM",
+            "f1_moyen": 0.9118013776122811,
+            "temps_moyen": 0.08253614107767741
+        },
+        "Thermostat": {
+            "meilleur_f1": "KNN",
+            "plus_rapide": "SVM",
+            "f1_moyen": 0.9683442190713217,
+            "temps_moyen": 0.0383139451344808
+        },
+        "Weather": {
+            "meilleur_f1": "KNN",
+            "plus_rapide": "Arbre",
+            "f1_moyen": 1.0,
+            "temps_moyen": 0.033278703689575195
+        }
+    },
+    "statistiques_globales": {
+        "Accuracy": {
+            "Arbre": 1.0,
+            "KNN": 1.0,
+            "SVM": 0.9263
+        },
+        "Precision": {
+            "Arbre": 1.0,
+            "KNN": 1.0,
+            "SVM": 0.9257
+        },
+        "Rappel": {
+            "Arbre": 1.0,
+            "KNN": 1.0,
+            "SVM": 0.9193
+        },
+        "F1_Score": {
+            "Arbre": 1.0,
+            "KNN": 1.0,
+            "SVM": 0.9211
+        },
+        "Temps_Prediction": {
+            "Arbre": 0.003,
+            "KNN": 0.18,
+            "SVM": 0.0439
+        }
+    },
+    "metriques_completes": [
+        {
+            "Appareil": "Fridge",
+            "Modele": "KNN",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.19507241249084473,
+            "Echantillons": 39944,
+            "Categorie": "Domestique"
+        },
+        {
+            "Appareil": "Fridge",
+            "Modele": "Arbre",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.009726762771606445,
+            "Echantillons": 39944,
+            "Categorie": "Domestique"
+        },
+        {
+            "Appareil": "Fridge",
+            "Modele": "SVM",
+            "Accuracy": 0.82326435246996,
+            "Precision": 0.8160596760878207,
+            "Rappel": 0.801703070253578,
+            "F1_Score": 0.8074944940270466,
+            "Temps_Prediction": 0.002581357955932617,
+            "Echantillons": 39944,
+            "Categorie": "Domestique"
+        },
+        {
+            "Appareil": "Garage_Door",
+            "Modele": "KNN",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.4757528305053711,
+            "Echantillons": 39587,
+            "Categorie": "Sécurité"
+        },
+        {
+            "Appareil": "Garage_Door",
+            "Modele": "Arbre",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.0015530586242675781,
+            "Echantillons": 39587,
+            "Categorie": "Sécurité"
+        },
+        {
+            "Appareil": "Garage_Door",
+            "Modele": "SVM",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.005213022232055664,
+            "Echantillons": 39587,
+            "Categorie": "Sécurité"
+        },
+        {
+            "Appareil": "GPS_Tracker",
+            "Modele": "KNN",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.07688474655151367,
+            "Echantillons": 38960,
+            "Categorie": "Transport"
+        },
+        {
+            "Appareil": "GPS_Tracker",
+            "Modele": "Arbre",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.0026082992553710938,
+            "Echantillons": 38960,
+            "Categorie": "Transport"
+        },
+        {
+            "Appareil": "GPS_Tracker",
+            "Modele": "SVM",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.2656435966491699,
+            "Echantillons": 38960,
+            "Categorie": "Transport"
+        },
+        {
+            "Appareil": "Modbus",
+            "Modele": "KNN",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.07822823524475098,
+            "Echantillons": 31106,
+            "Categorie": "Industriel"
+        },
+        {
+            "Appareil": "Modbus",
+            "Modele": "Arbre",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.0014812946319580078,
+            "Echantillons": 31106,
+            "Categorie": "Industriel"
+        },
+        {
+            "Appareil": "Modbus",
+            "Modele": "SVM",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.011275053024291992,
+            "Echantillons": 31106,
+            "Categorie": "Industriel"
+        },
+        {
+            "Appareil": "Motion_Light",
+            "Modele": "KNN",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.24506878852844238,
+            "Echantillons": 39488,
+            "Categorie": "Domotique"
+        },
+        {
+            "Appareil": "Motion_Light",
+            "Modele": "Arbre",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.001432657241821289,
+            "Echantillons": 39488,
+            "Categorie": "Domotique"
+        },
+        {
+            "Appareil": "Motion_Light",
+            "Modele": "SVM",
+            "Accuracy": 0.7528696826468603,
+            "Precision": 0.7377844280099501,
+            "Rappel": 0.7334939817335027,
+            "F1_Score": 0.7354041328368432,
+            "Temps_Prediction": 0.0011069774627685547,
+            "Echantillons": 39488,
+            "Categorie": "Domotique"
+        },
+        {
+            "Appareil": "Thermostat",
+            "Modele": "KNN",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.11142659187316895,
+            "Echantillons": 32774,
+            "Categorie": "Énergie"
+        },
+        {
+            "Appareil": "Thermostat",
+            "Modele": "Arbre",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.002330780029296875,
+            "Echantillons": 32774,
+            "Categorie": "Énergie"
+        },
+        {
+            "Appareil": "Thermostat",
+            "Modele": "SVM",
+            "Accuracy": 0.9078706528370958,
+            "Precision": 0.9257965984341434,
+            "Rappel": 0.8996807899012623,
+            "F1_Score": 0.9050326572139653,
+            "Temps_Prediction": 0.0011844635009765625,
+            "Echantillons": 32774,
+            "Categorie": "Énergie"
+        },
+        {
+            "Appareil": "Weather",
+            "Modele": "KNN",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.07769942283630371,
+            "Echantillons": 39260,
+            "Categorie": "Environnement"
+        },
+        {
+            "Appareil": "Weather",
+            "Modele": "Arbre",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.0016646385192871094,
+            "Echantillons": 39260,
+            "Categorie": "Environnement"
+        },
+        {
+            "Appareil": "Weather",
+            "Modele": "SVM",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1_Score": 1.0,
+            "Temps_Prediction": 0.020472049713134766,
+            "Echantillons": 39260,
+            "Categorie": "Environnement"
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "dataset": "Train_Test_IoT_Modbus.csv",
+    "label_mapping": {
+        "DDoS": 0,
+        "Normal": 1
+    },
+    "dimensions": {
+        "total_samples": 31106,
+        "train_samples": 21774,
+        "validation_samples": 4666,
+        "test_samples": 4666,
+        "features": 6
+    },
+    "distribution_classes": {
+        "DDoS": 16106,
+        "Normal": 15000
+    },
+    "resultats_validation": {
+        "KNN": {
+            "accuracy": 1.0,
+            "f1_score": 1.0,
+            "confusion_matrix": [
+                [
+                    2416,
+                    0
+                ],
+                [
+                    0,
+                    2250
+                ]
+            ],
+            "y_pred_samples": 4666,
+            "y_true_samples": 4666
+        },
+        "ARBRE_DECISION": {
+            "accuracy": 1.0,
+            "f1_score": 1.0,
+            "confusion_matrix": [
+                [
+                    2416,
+                    0
+                ],
+                [
+                    0,
+                    2250
+                ]
+            ],
+            "y_pred_samples": 4666,
+            "y_true_samples": 4666
+        },
+        "SVM": {
+            "accuracy": 1.0,
+            "f1_score": 1.0,
+            "confusion_matrix": [
+                [
+                    2416,
+                    0
+                ],
+                [
+                    0,
+                    2250
+                ]
+            ],
+            "y_pred_samples": 4666,
+            "y_true_samples": 4666
+        }
+    },
+    "meilleurs_parametres": {
+        "KNN": "{'n_neighbors': 3, 'weights': 'uniform'}",
+        "ARBRE_DECISION": "{'criterion': 'gini', 'max_depth': 5}",
+        "SVM": "{'C': 0.1, 'kernel': 'linear'}"
+    },
+    "timestamp": "2025-12-31 13:09:30",
+    "auteur": "Projet IoT - Détection DDoS"
+}

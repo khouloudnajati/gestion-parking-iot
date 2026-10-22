@@ -1,0 +1,50 @@
+{
+    "timestamp": "20251228_234149",
+    "dataset": "Train_Test_IoT_Fridge.csv",
+    "dimensions": [
+        39944,
+        6
+    ],
+    "distribution_classes": {
+        "DDoS": "24944",
+        "Normal": "15000"
+    },
+    "resultats_comparatifs": [
+        {
+            "Modele": "KNN",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1-Score": 1.0,
+            "Temps Prediction (s)": 0.09755802154541016
+        },
+        {
+            "Modele": "Arbre",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Rappel": 1.0,
+            "F1-Score": 1.0,
+            "Temps Prediction (s)": 0.001552581787109375
+        },
+        {
+            "Modele": "SVM",
+            "Accuracy": 0.830607476635514,
+            "Precision": 0.8316382383848094,
+            "Rappel": 0.8015572183621356,
+            "F1-Score": 0.8117824819881534,
+            "Temps Prediction (s)": 1.452592372894287
+        }
+    ],
+    "meilleurs_parametres": {
+        "KNN": {
+            "n_neighbors": 5
+        },
+        "Arbre": {
+            "max_depth": 10
+        },
+        "SVM": {
+            "kernel": "linear",
+            "C": 1.0
+        }
+    }
+}

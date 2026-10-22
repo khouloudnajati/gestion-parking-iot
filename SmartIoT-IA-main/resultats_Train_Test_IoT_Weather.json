@@ -1,0 +1,51 @@
+{
+    "dataset": "Train_Test_IoT_Weather.csv",
+    "dimensions": [
+        39260,
+        6
+    ],
+    "distribution_classes": {
+        "DDoS": 24260,
+        "Normal": 15000
+    },
+    "resultats_comparatifs": [
+        {
+            "Modele": "KNN",
+            "Accuracy": 1.0,
+            "Precision (DDoS)": 1.0,
+            "Rappel (DDoS)": 1.0,
+            "F1-Score (DDoS)": 1.0,
+            "Temps Prediction (s)": 0.06823515892028809
+        },
+        {
+            "Modele": "Arbre",
+            "Accuracy": 1.0,
+            "Precision (DDoS)": 1.0,
+            "Rappel (DDoS)": 1.0,
+            "F1-Score (DDoS)": 1.0,
+            "Temps Prediction (s)": 0.0016286373138427734
+        },
+        {
+            "Modele": "SVM",
+            "Accuracy": 1.0,
+            "Precision (DDoS)": 1.0,
+            "Rappel (DDoS)": 1.0,
+            "F1-Score (DDoS)": 1.0,
+            "Temps Prediction (s)": 0.022330760955810547
+        }
+    ],
+    "meilleurs_parametres": {
+        "KNN": {
+            "metric": "euclidean",
+            "n_neighbors": 3
+        },
+        "Arbre": {
+            "max_depth": 5,
+            "min_samples_split": 2
+        },
+        "SVM": {
+            "C": 0.1,
+            "kernel": "linear"
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "dataset": "Train_Test_IoT_GPS_Tracker.csv",
+    "dimensions": [
+        38960,
+        5
+    ],
+    "distribution_classes": {
+        "DDoS": 23960,
+        "Normal": 15000
+    },
+    "resultats_comparatifs": [
+        {
+            "Modele": "KNN",
+            "Accuracy": 1.0,
+            "Precision (DDoS)": 1.0,
+            "Rappel (DDoS)": 1.0,
+            "F1-Score (DDoS)": 1.0,
+            "Temps Prediction (s)": 0.08496904373168945
+        },
+        {
+            "Modele": "Arbre",
+            "Accuracy": 1.0,
+            "Precision (DDoS)": 1.0,
+            "Rappel (DDoS)": 1.0,
+            "F1-Score (DDoS)": 1.0,
+            "Temps Prediction (s)": 0.002749919891357422
+        },
+        {
+            "Modele": "SVM",
+            "Accuracy": 1.0,
+            "Precision (DDoS)": 1.0,
+            "Rappel (DDoS)": 1.0,
+            "F1-Score (DDoS)": 1.0,
+            "Temps Prediction (s)": 0.20342612266540527
+        }
+    ],
+    "meilleurs_parametres": {
+        "KNN": {
+            "metric": "euclidean",
+            "n_neighbors": 3
+        },
+        "Arbre": {
+            "max_depth": 5,
+            "min_samples_split": 2
+        },
+        "SVM": {
+            "C": 0.1,
+            "kernel": "rbf"
+        }
+    }
+}

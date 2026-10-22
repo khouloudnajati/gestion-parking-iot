@@ -1,0 +1,119 @@
+{
+    "best_algorithm": "DecisionTree",
+    "weighted_score": 9.15,
+    "evaluation_details": {
+        "KNN": {
+            "Consommation Mémoire": 2.0,
+            "Vitesse Prédiction": 3.0,
+            "Consommation CPU": 3.0,
+            "Sans Normalisation": 0.0,
+            "Robustesse Bruit": 4.0,
+            "Interprétabilité": 2.0
+        },
+        "DecisionTree": {
+            "Consommation Mémoire": 9.0,
+            "Vitesse Prédiction": 10.0,
+            "Consommation CPU": 9.0,
+            "Sans Normalisation": 10.0,
+            "Robustesse Bruit": 6.0,
+            "Interprétabilité": 10.0
+        },
+        "SVM": {
+            "Consommation Mémoire": 6.0,
+            "Vitesse Prédiction": 7.0,
+            "Consommation CPU": 5.0,
+            "Sans Normalisation": 0.0,
+            "Robustesse Bruit": 8.0,
+            "Interprétabilité": 4.0
+        }
+    },
+    "iot_criteria": {
+        "Consommation Mémoire": {
+            "importance": "TRÈS ÉLEVÉE",
+            "description": "Les dispositifs IoT ont une RAM limitée (souvent < 1MB)",
+            "unité": "Mo",
+            "poids": 0.25
+        },
+        "Vitesse Prédiction": {
+            "importance": "TRÈS ÉLEVÉE",
+            "description": "Détection en temps réel requise pour la sécurité",
+            "unité": "ms/échantillon",
+            "poids": 0.25
+        },
+        "Consommation CPU": {
+            "importance": "ÉLEVÉE",
+            "description": "Processeurs limités (souvent ARM Cortex-M)",
+            "unité": "Cycles CPU",
+            "poids": 0.2
+        },
+        "Sans Normalisation": {
+            "importance": "ÉLEVÉE",
+            "description": "Évite le prétraitement coûteux en ressources",
+            "unité": "Oui/Non",
+            "poids": 0.15
+        },
+        "Robustesse Bruit": {
+            "importance": "MOYENNE",
+            "description": "Données IoT souvent bruitées",
+            "unité": "Score 1-5",
+            "poids": 0.1
+        },
+        "Interprétabilité": {
+            "importance": "FAIBLE",
+            "description": "Utile pour le débogage mais non essentiel",
+            "unité": "Score 1-5",
+            "poids": 0.05
+        }
+    },
+    "context_recommendations": {
+        "Micro-contrôleurs": {
+            "exemples": [
+                "ESP32",
+                "Arduino",
+                "STM32"
+            ],
+            "mémoire": "≤ 512KB RAM",
+            "cpu": "≤ 240MHz",
+            "énergie": "Batterie",
+            "recommandation": "DecisionTree",
+            "raison": "Ultra-léger, ultra-rapide, pas de normalisation"
+        },
+        "Gateways IoT": {
+            "exemples": [
+                "Raspberry Pi",
+                "Orange Pi",
+                "Jetson Nano"
+            ],
+            "mémoire": "1-4GB RAM",
+            "cpu": "1-4 cœurs",
+            "énergie": "Secteur/PoE",
+            "recommandation": "DecisionTree ou SVM linéaire",
+            "raison": "Capacité pour normalisation, besoin de robustesse"
+        },
+        "Edge Computing": {
+            "exemples": [
+                "NVIDIA Jetson",
+                "Intel NUC",
+                "Serveurs edge"
+            ],
+            "mémoire": "4-16GB RAM",
+            "cpu": "4-8 cœurs",
+            "énergie": "Secteur",
+            "recommandation": "SVM avec noyau approprié",
+            "raison": "Capacité de calcul pour optimisation avancée"
+        },
+        "Cloud IoT": {
+            "exemples": [
+                "AWS IoT",
+                "Azure IoT",
+                "Google Cloud IoT"
+            ],
+            "mémoire": "Illimitée",
+            "cpu": "Illimité",
+            "énergie": "Secteur",
+            "recommandation": "Tous (selon précision requise)",
+            "raison": "Ressources illimitées, priorité à la précision"
+        }
+    },
+    "conclusion": "Arbre de Décision est le plus adapté pour IoT"
+}
